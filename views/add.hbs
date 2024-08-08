@@ -7,41 +7,56 @@
         <div class="col-xl-9 col-md-10 col-sm-11 m-auto">
             <h5 class="background text-center  p-2">Add Employee Record</h5>
            <form action="" method="post">
-             <div class="mb-3">
+             <div class="mb-2">
                 <label >Name*</label>
-                <input type="text" name="name" placeholder="Full Name" class="form-control border-primary border-2">
+                <input type="text" name="name" placeholder="Full Name" class="form-control border-primary border-2" value={{data.name}}>
+                {{#if errorMessage.name}}
+                <p class="text-danger">{{errorMessage.name}}</p>
+                {{/if}}
             </div>
             <div class="row">
-                <div class="col-md-6 mb-3">
+                <div class="col-md-6 mb-2">
                     <label >Email*</label>
-                    <input type="email" name="email" placeholder="Enter The Email" class="form-control border-primary border-2">
+                    <input type="email" name="email" placeholder="Enter The Email" class="form-control border-primary border-2" value={{data.email}}>
+                   {{#if errorMessage.email}}
+                <p class="text-danger">{{errorMessage.email}}</p>
+                   {{/if}}
                 </div>
-                <div class="col-md-6 mb-3">
+                <div class="col-md-6 mb-2">
                     <label >Phone*</label>
-                    <input type="number" name="phone" placeholder="Enter Phone Number" class="form-control border-primary border-2">
+                    <input type="number" name="phone" placeholder="Enter Phone Number" class="form-control border-primary border-2" value={{data.phone}}>
+                 {{#if errorMessage.phone}}
+                <p class="text-danger">{{errorMessage.phone}}</p>
+                   {{/if}}
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 mb-3">
+                <div class="col-md-6 mb-2">
                     <label >Designation*</label>
-                    <input type="text" name="designation" placeholder="Enter The Designation" class="form-control border-primary border-2">
+                    <input type="text" name="designation" placeholder="Enter The Designation" class="form-control border-primary border-2" value={{data.designation}}>
+                   {{#if errorMessage.designation}}
+                <p class="text-danger">{{errorMessage.designation}}</p>
+                   {{/if}}
                 </div>
-                <div class="col-md-6 mb-3">
+                <div class="col-md-6 mb-2">
                     <label >Salary*</label>
-                    <input type="number" name="salary" placeholder="Enter The salary" class="form-control border-primary border-2">
+                    <input type="number" name="salary" placeholder="Enter The salary" class="form-control border-primary border-2" value={{data.salary}}>
+                    {{#if errorMessage.salary}}
+                <p class="text-danger">{{errorMessage.salary}}</p>
+                   {{/if}}
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 mb-3">
+                <div class="col-md-6 mb-2">
                     <label >City</label>
-                    <input type="text" name="city" placeholder="Enter The City" class="form-control border-primary border-2">
+                    <input type="text" name="city" placeholder="Enter The City" class="form-control border-primary border-2" value={{data.city}}>
                 </div>
-                <div class="col-md-6 mb-3">
+                <div class="col-md-6 mb-2">
                     <label >State</label>
-                    <input type="text" name="text" placeholder="Enter the State" class="form-control border-primary border-2">
+                    <input type="text" name="text" placeholder="Enter the State" class="form-control border-primary border-2" value={{data.state}}>
                 </div>
             </div>
-            <div class="mb-3">
+            <div class="mb-2">
                 <button class="btn background p-2 w-100 ">Create </button>
             </div>
 

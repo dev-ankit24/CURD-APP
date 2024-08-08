@@ -2,6 +2,40 @@
 <title>CURD | Home</title>
 {{>navbar}}
 
-<div class="container-fluid mt-2 mid-section "></div>
+<div class="container-fluid mt-2 mid-section ">
+    <h5 class="text-center background p-2">Employee Data Record</h5>
+    <table class="table table-bordered "   >
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Designation</th>
+                <th>Salary</th>
+                <th>City</th>
+                <th>State</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each data}}
+              <tr>
+                <td>{{id}}</td>
+                <td>{{name}}</td>
+                <td>{{email}}</td>
+                <td>{{phone}}</td>
+                <td>{{designation}}</td>
+                <td>{{salary}}</td>
+                <td>{{city}}</td>
+                <td>{{state}}</td>
+                <td><a href="/edit/{{_id}}"><i class="fa fa-edit fs-4"></i></a></td>
+                <td><a href="/delete/{{_id}}"><i class="fa fa-trash text-danger fs-4"></i></a></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
 
 {{>footer}}

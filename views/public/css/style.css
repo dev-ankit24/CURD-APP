@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background{
+    /* background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+        background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+        
+}
+.mid-section{
+    
+    height: 478px;
+    overflow: auto;
+}
+.mid-section::-webkit-scrollbar{
+    display: none;
+}
+@media only screen and (min-width:0) and (max-width:768px){
+    .mid-section{
+        
+        height: 450px;
+}
+}

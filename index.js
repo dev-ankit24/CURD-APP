@@ -4,6 +4,7 @@ const app = express()
 const bodyParser =require("body-parser")
 
 const encoder=new bodyParser.urlencoded()
+const Employee = require("./model/Employee")
 
 app.set("view engine","hbs")
 
